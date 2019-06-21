@@ -20,7 +20,9 @@ pipeline {
                         steps {
                                 withSonarQubeEnv('sonar') {
                                         // requires SonarQube Scanner for Maven 3.2+
-                                        sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar -Dsonar.host.url=$SONAR_HOST_URL  -Dsonar.login=ba68952245ce04f276b04fdcf4ddc6f93a5bb2d2 -Dsonar.projectKey=dcdojo -Dsonar.organization=amineoualialami-github'
+                                        sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar -Dsonar.host.url=$SONAR_HOST_URL  -Dsonar.login=6f4c312e65461651d571e2db6dba5db22e2630ba -Dsonar.projectKey=cicd-dojo -Dsonar.organization=amineoualialami-github'
+                                         -Dsonar.login=6f4c312e65461651d571e2db6dba5db22e2630ba 
+                                         -Dsonar.projectKey=dcdojo -Dsonar.organization=jhennin-github'
                                 }
                         }
                 }
