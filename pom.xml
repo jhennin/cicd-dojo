@@ -31,6 +31,22 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+               <!-- Publish  releases here -->
+               <repository>
+                       <id>nexus</id>
+                       <name>My releases</name>
+                       <url>http://localhost:8081/repository/cicd-dojo-release/</url>
+               </repository>
+
+               <!-- Publish snapshots here -->
+               <snapshotRepository>
+                       <id>nexus</id>
+                       <name>My snapshots</name>
+                        <url>http://localhost:8081/repository/cicd-dojo-snapshot/</url>
+               </snapshotRepository>
+     </distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>

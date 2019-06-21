@@ -16,9 +16,9 @@ pipeline {
                                 }
                         }
                 }
-                stage('Hello') {
+                stage('upload nexus') {
                         steps {
-                                echo 'Hello DC team this is your first pipeline.'
+                                sh 'mvn deploy'
                         }
                 }
         }
